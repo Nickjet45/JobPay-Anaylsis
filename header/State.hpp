@@ -6,11 +6,11 @@
 class State{
     private:
         std::string name;
-        double MedianYearlySalary;
-        double MedianWeeklyHours;
-        double MedianReportedRent;
-        double MedianGroceryCost;
-        double MedianTaxContribution;
+        double MeanYearlySalary;
+        double MeanWeeklyHours;
+        double MeanReportedRent;
+        double MeanGroceryCost;
+        double MeanTaxContribution;
         double PercentUnemployed;
         std::vector<Person> citizens;
     public:
