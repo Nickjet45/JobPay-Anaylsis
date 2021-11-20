@@ -41,6 +41,7 @@ void Country::AddCitizen(Person citizen){
         else{
             //Make a new state with that name and add it to the states vector
             State newState(citizen.GetState());
+            stateIndex[newState.GetName()] = states.size();
             states.push_back(newState);
 
             //Citizen needs to be added to the last state
