@@ -45,6 +45,7 @@ double Stats::CalculateMean(std::vector<Person> data, int meanCode){
             //Percent unemployed
             case 6:
                 for(size_t i =0; i < data.size(); i++){
+                    //Total unemployed / Num indiviudals = percent unemployed
                     if(tolower(data.at(i).GetUnemployedStatus()) == 'y')
                         mean += data.at(i).GetYearlyPay();
                 }
