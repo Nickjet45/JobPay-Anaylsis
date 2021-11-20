@@ -5,7 +5,8 @@
 
 class Person{
     private:
-        std::string country;     
+        std::string country;
+        std::string state;     
         int YearlyPay;
         double WeeklyHours;
         double HourlyWage;
@@ -21,6 +22,9 @@ class Person{
 
         std::string GetCountry() const {return this->country;};
         void SetCountry(std::string country) {this->country = country;}
+
+        std::string GetState() const {return this->state;};
+        void GetState(std::string state) {this->state = state;}
 
         int GetYearlyPay() const {return this->YearlyPay;}
         void SetYearlyPay(int YearlyPay) {this->YearlyPay = YearlyPay;}
