@@ -24,7 +24,7 @@ class Country{
         Country();
         Country(std::string name);
 
-        void AddCitizen(Person citizen){}
+        void AddCitizen(Person citizen);
 
         void SetName(std::string name) {this->name = name;}
         std::string GetName() const {return this->name;}

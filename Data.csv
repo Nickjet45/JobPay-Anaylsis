@@ -1,4 +1,4 @@
-,Timestamp,"Country -- Please type either the full name of your country or a common abbreviation. For U.S, enter U.S.A or United States of America",State -- If not in U.S enter NA or ignore,Industry,"""Official"" Role (Job Title)","Yearly Salary (Enter full number, Ex. 79,000)",Hours worked per week,Hourly Wage (Yearly / (52 * Hours worked)),Years worked at current company? If self-employed enter years since you have been self-employed,Years of experience,Unemployed? [Y/N],Average cost of rent for your state/country,"What is your expected tax contribution? Enter as a full number, Ex. 14,000, enter  ""Unsure"" if unknown","How much do you pay in utilities? If your rent includes utilities, ignore or enter NA",How much do you typically spend on groceries for a given month? Enter NA if non-applicable
+,Timestamp,"Country -- Please type either the full name of your country or a common abbreviation. For U.S, enter U.S.A or United States of America",State -- If not in U.S enter NA or ignore,Industry,"""Official"" Role (Job Title)","Yearly Salary (Enter full number, Ex. 79,000)",Hours worked per week,Hourly Wage (Yearly / (52 * Hours worked)),Years worked at current company? If self-employed enter years since you have been self-employed,Years of experience- Enter as Decimal/Integer,Unemployed? [Y/N],Average cost of rent for your state/country,"What is your expected tax contribution? Enter as a full number, Ex. 14,000, enter  ""Unsure"" if unknown","How much do you pay in utilities? If your rent includes utilities, ignore or enter NA",How much do you typically spend on groceries for a given month? Enter NA if non-applicable
 0,11/19/2021 15:34:03,United States of America ,California,Government,Customer service representative ,39411,40,18.95,1.5,1.5,N,1184,5200,100,160
 1,11/19/2021 15:38:11,U.S.A,Washington,Facilities ,Move/Relocation Manager ,"90,000",40,43.2,3,6,N,2100,Unsure,200,250
 2,11/19/2021 15:42:08,U.S.A.,South Carolina,Higher Education - online,Senior Program Faculty,"$59,000",35-45,$28.30,5,20,N,700,18200,400,600
@@ -8,7 +8,7 @@
 6,11/19/2021 15:48:59,Germany,,IT,Frontend Developer,26400,40,"12,79€",0,0,N,500€,"2,500€",100€,300€
 7,11/19/2021 15:49:23,U.S.A,Iowa,Government ,Administrative Assistant ,"42,500",40,20.43,1,10,Yes,,8000,,300
 8,11/19/2021 15:50:15,U.S.A,CA,Financial Sector,Corp and Equity Trade/Settlements,"55,000",45,26,2,2,N,2200,8000,400,200
-9,11/19/2021 15:55:25,U.S.A,California,Creative / Web Design & Development,Developer,31000,35,17.03,3,4,N,"$1,200","$6,000",~ 150 monthly,$500
+9,11/19/2021 15:55:25,U.S.A,California,Creative / Web Design & Development,Developer,31000,35,17.03,3,4,N,"$1,200","$6,000",150,$500
 10,11/19/2021 15:58:11,U.S.A.,Washington,Baking,Cake Decorator ,"24,000",30,20,2,5,N,2169,2400,200,350
 11,11/19/2021 15:58:29,US,Il,Food service,Service manager,"34,000",30,$18.00,4,12,N,"1,000",Unsure,$400,
 12,11/19/2021 16:00:09,U.S.A,California,Food,Barista,4500,5,16.32,2,2,N,2000,350,50,500
@@ -42,22 +42,22 @@
 40,11/19/2021 16:58:29,U.S.A,NC,Retail,Team Lead,"37,000",38,18.8,4,20,N,780,0,300,300
 41,11/19/2021 16:58:40,USA,Ohio,Information Technology,Jr. Data Analyst,"47,000",45-50,20,1,1,N,1000,"9,400",150,300
 42,11/19/2021 16:59:59,United States,Oregon ,Retail,Pro Sales Specialist,"38,459",40,18.49,2,1,N,1450,Unsure,Na,300
-43,11/19/2021 17:00:58,U.S.A,Pennsylvania,Nonprofit Development,Associate,55000,40,26.44,2,2,Y,1375,Unsure,~$100,~$400-$500
+43,11/19/2021 17:00:58,U.S.A,Pennsylvania,Nonprofit Development,Associate,55000,40,26.44,2,2,Y,1375,Unsure,100,~$400-$500
 44,11/19/2021 17:01:12,United States,IL,Transportation,Logistics Coordinator,"45,000",40,21.75,Labelmaster,3,N,,"11,250",150,200
 45,11/19/2021 17:02:04,United States,Arkansas,Healthcare,Medical Assistant/Lab Technician,"32,000",43,15,2,2,N,"1,050","14,000",190,300
 46,11/19/2021 17:02:33,United States,ID,Advertising,Marketing Coordinator,"43,680",40,21,1,1,N,,"5,000",,200
 47,11/19/2021 17:02:50,Canada,,Finance,"Manager, Corporate Finance",63000,45,,5,7,N,800,11000,,200
-48,11/19/2021 17:05:28,United States,Alaska,Healthcare/medical ,Pediatric Certified Medical Assistant ,32000,32,23,7,8,N,1400,Unsure,425/mo average ,600-800
+48,11/19/2021 17:05:28,United States,Alaska,Healthcare/medical ,Pediatric Certified Medical Assistant ,32000,32,23,7,8,N,1400,Unsure,425,600-800
 49,11/19/2021 17:07:02,United States,VA,Local Government,Senior IT Analyst,"92,000",37.5,47.17,20,25,n,1800,"25,000",250,600
 50,11/19/2021 17:07:19,United Kingdom,W.Mids,Rail,Technician,63000,28,32,3,12,N,800,20000,300,900
 51,11/19/2021 17:07:24,U.S.A.,VA,Higher Education - Student Affairs,Director,"54,000",35,29.67,2,5,N,975,Unknown,200,500
 52,11/19/2021 17:10:53,U.S.A.,California,Healthcare,Administrative Shift Lead,46800,40,22.5,1,1,N,,8500,,240
 53,11/19/2021 17:15:06,U.S.A,CA,Restaurant,Human Resources,"65,000",50,25,5,5,N,1200,Unsure,100,100
-54,11/19/2021 17:17:29,U.S.A.,Illinois,(Fast) food service,Team member ,,Varies widely (full-time college student),$11.50,0.5,None prior,N,$787,Unsure ,,
+54,11/19/2021 17:17:29,U.S.A.,Illinois,(Fast) food service,Team member ,,Varies widely (full-time college student),$11.50,0.5,0,N,$787,Unsure ,,
 55,11/19/2021 17:17:37,U.S.A,FL,Healthcare,Medical Billing Manager,"56,000",40,27,4,8,N,1600,Unsure,220,600
-56,11/19/2021 17:24:51,United States,WA,Graphic Design,Designer/proposal specialist ,"50,000",35-45,30/hr,4,6,N,"1,300-2,200",Unknown,"2,000",300
+56,11/19/2021 17:24:51,United States,WA,Graphic Design,Designer/proposal specialist ,"50,000",35-45,30/hr,4,6,N,"1,300-2,200",Unsure,"2,000",300
 57,11/19/2021 17:28:09,U.S.A,Texas,Technology,Software Engineer,"110,000",40,$53/hr,0.5,3.5,N,1200,"25,000",,300
-58,11/19/2021 17:28:38,U.S.A.,Montana,Cannabis,Head Chef,"52,500",35,31.25,Five,Five,N,"1,200",Unsure,,600
+58,11/19/2021 17:28:38,U.S.A.,Montana,Cannabis,Head Chef,"52,500",35,31.25,5,5,N,"1,200",Unsure,,600
 59,11/19/2021 17:28:47,U.S.A.,CA,Academia/Veterinary Medicine,Research Data Analyst,"65,000",65,19.25,5,5,N,"1,950",UNSURE,150,450
 60,11/19/2021 17:30:53,Germany,Berlin,IT,Game Developer,60000,40,28.84,2,Frontend: 6 | Gamedev: 2,N,600,24000,,250
 61,11/19/2021 17:31:16,United States of America,Florida,Information Technology,Senior Solutions Architect,"140,000",45,61.96,8,11,N,,"17,000",300,500
@@ -66,3 +66,26 @@
 64,11/19/2021 17:31:57,U.S.A.,Virginia,Marketing Technology,"Sr Manager, Digital Marketing Technology","150,000",40,72,3,15,Y,,Unsure,,700
 65,11/19/2021 17:32:51,United States,Pennsylvania,Design/Information Technology ,IT Specialist ,"38,220",35,21/hour,3,5,N,"$1,100",Unsure,,$400
 66,11/19/2021 17:34:25,United States of America,Alaska,Healthcare ,Medical Transcriptionist,"$21,424",40,$10.30,1,1,N,"$1,108",Unsure,,
+67,11/19/2021 17:37:22,U.S.A.,CO,FinTech,Product Manager,"220,000",45,95,3,3,N,1600,Unsure,100,500
+68,11/19/2021 17:38:39,United States of America,MA,Biotech,Talent Intelligence Analyst,"90,000",40,43.27,0.2,2.5,N,2500,"29,529",200,350
+69,11/19/2021 17:46:05,U.S.A,North Carolina,Restaurant,Chef de Cuisine,"85,000",55,33,0.5,7,N,"1,400",Unsure,700,900
+70,11/19/2021 17:48:35,U.S.A,Vermont,Machining,CNC Machinist,"33,000",42,16,1,1,N,1700,Unsure,,120
+71,11/19/2021 17:49:36,United States of America,Kansas,Restoration,Restoration Technician,"31,000",35-60,15,Less than 1,2,N,1025,Unsure,175,350
+72,11/19/2021 17:49:50,U.S.A,CO,Private business,Administrative Assistant,"42,240",40,22,Less than 1,2,N,"1,824",Unsure,200,300
+73,11/19/2021 17:52:25,USA ,Va,Retail grocery ,Assistant Store Manager ,56000 + yearly bonus 12% of yearly pay,55 average ,22.24,15,15,N,1007,20000,200,600
+74,11/19/2021 17:59:19,U.S.A,PA,Food service,Line cook,"18,000",30-38,11.75,7,10,Y,"$1,000",Unsure,,
+75,11/19/2021 17:59:51,United Kingdom,,NHS,GP Practice Manager (NHS),"£40,900",37.5,£20.97,2,8,N,"£1,200/month 3 bed house",£10200,£120,£400
+76,11/19/2021 18:02:30,U.S.A.,New Jersey,Mental health care,Clinical director ,"87,000",40,41.82,1,16,N,1257,Unsure,500,300
+77,11/19/2021 18:02:42,United States,MICHIGAN (MI),Information Technology,IT Manager,80000,60,25.65,2,22,N,800,Unsure,350,400
+78,11/19/2021 18:05:54,U.S.A.,Vermont ,Education - Public,Special Education Director,86100,50,33.1,3,16,N,1500,Unsure,700,600
+79,11/19/2021 18:07:20,United States,Texas,Business,Data Entry,"37,400",40,18,0.2,0.2,N,,"5,600",130,480
+80,11/19/2021 18:07:33,U.S.,New York,IT,Escalation Engineer,"67,000",50,32,3,5,Y,1800,10000,400,300
+81,11/19/2021 18:07:55,United States,WA,Government,Network and System Administrator,96000,40,46.46,2,10,N,"$1,265",Unsure,$400,800
+82,11/19/2021 18:11:00,U.S.A. ,Tennessee ,Senior Management ,V.P. Of Operations ,"130,800",40,62.88,1,7,N,1400,"12,349",210,400
+83,11/19/2021 18:12:41,U.S.A.,New Hampshire ,Engineering ,Environmental engineer ,"89,000",40,42,4,5,N,1600,Unsure ,150,400
+84,11/19/2021 18:22:02,Canada,,Education,Teacher,"70,000",40,33.65,1,1,N,1000,Unsure,,120
+85,11/19/2021 18:29:46,United States,PA,Wholesale Food Distribution ,Accounts Payable Clerk,"37,000",40,18,3,3,N,2132,Unsure,,150
+86,11/19/2021 18:30:08,United States,Indiana,Information Technology,Help Desk Technician,40000,40,20,1,1,Y,800,7000,,300
+87,11/19/2021 18:30:54,U.S.A,WA,Accounting,Billing Specialist Lead,"51,771",40,24.89,0,11,N,1539,Unsure,300,750
+88,11/19/2021 18:31:57,U.S.A,MA,Software,Product Marketing Manager,160000,40,76,1,15,N,2500,"Idk, 40k?",350,350 for 2 adults 3 kids
+89,11/19/2021 18:38:11,United States of America,Georgia,Technology,Director of Paid Marketing,"160,000",40,77,1,9,N,1723,50000,300,500
