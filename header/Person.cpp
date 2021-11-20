@@ -20,9 +20,10 @@ Person::Person(){
     this->GroceryCost = 0;
 }
 
-Person::Person(std::string country, std::string Industry, std::string JobTitle, int YearlyPay, int WeeklyHours, double HourlyWage, double YearsExperience,
+Person::Person(std::string country, std::string state, std::string Industry, std::string JobTitle, int YearlyPay, int WeeklyHours, double HourlyWage, double YearsExperience,
         double YearsAtCompany, char unemployedStatus, int reportedRent, double expectedTaxContribution, double UtilitiesCost, int GroceryCost){
             this->country = country;
+            this->state = state;
             this->Industry = Industry;
             this->JobTitle = JobTitle; 
 

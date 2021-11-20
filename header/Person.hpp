@@ -21,7 +21,8 @@ class Person{
         int GroceryCost;
     public:
         explicit Person();
-        explicit Person(std::string country, std::string Industyr, std::string JobTitle, int YearlyPay, int WeeklyHours, double HourlyWage, double YearsExperience,
+        explicit Person(std::string country, std::string state, std::string Industry, std::string JobTitle, int YearlyPay, int WeeklyHours,
+         double HourlyWage, double YearsExperience,
         double YearsAtCompany, char unemployedStatus, int reportedRent, double expectedTaxContribution, double UtilitiesCost, int GroceryCost);
 
         std::string GetCountry() const {return this->country;};

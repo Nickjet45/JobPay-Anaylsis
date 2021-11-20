@@ -37,7 +37,7 @@ int submenu(){
 }
 
 //Imports the data and stores each country into the vector of countries
-void importData(std::vector<Country> &countries){
+void importData(std::vector<Country> &countries, std::unordered_map<std::string, int> &map){
 
     //Open the file
     std::ifstream input;
@@ -116,8 +116,70 @@ void importData(std::vector<Country> &countries){
 
         //Next I need to format the salary and hourly wages
         //If the first character of the salary is a character, remove it so that it can be converted to an integer
-        if(isalpha(YearlyPay[0]))
-            YearlyPay.erase(0);
+        if(YearlyPay == "N/A" || YearlyPay == ""){
+            YearlyPay = "-1";
+        }else{
+            if(isalpha(YearlyPay[0]))
+                YearlyPay.erase(0);
+        }
+        
+        if(WeeklyHours == "N/A" || WeeklyHours == "")
+            WeeklyHours = "-1";
+        
+        if(HourlyWage == "N/A")
+            HourlyWage = "-1";
+        else{
+            if(isalpha(HourlyWage[0])){
+                HourlyWage.erase(0);
+            }
+        }
+
+        if(YearsAtCompany == "N/A")
+            YearsAtCompany = "-1";
+        
+        if(unemployedStatus.size() > 1)
+            unemployedStatus = unemployedStatus[0];
+        
+        if(reportedRent == "NA" || reportedRent == "Na" ||reportedRent == "N/A" || reportedRent == "Unsure" || reportedRent == "") //Java toUpper is so much better
+            reportedRent = "-1";
+        else if(isalpha(reportedRent[0]))
+            reportedRent.erase(0);
+        
+        if(expectedTaxContribution == "Unsure" || expectedTaxContribution == "UNSURE" || expectedTaxContribution == "Unknown")
+            expectedTaxContribution = "-1";
+        else if(isalpha(expectedTaxContribution[0]))
+            expectedTaxContribution.erase(0);
+
+        if(UtilitiesCost == "NA" || UtilitiesCost == "N/A" || UtilitiesCost == "")
+            UtilitiesCost = "-1";
+        else{
+            if(isalpha(UtilitiesCost[0]))
+                UtilitiesCost.erase(0);
+        }
+        
+        if(GroceryCost == "NA" || GroceryCost == "N/A" || GroceryCost == "")
+            GroceryCost = "-1";
+        else{
+            if(isalpha(GroceryCost[0]))
+                GroceryCost.erase(0);
+        }
+
+        //FINALLY MAKE THE PERSON
+        Person citizen(country,state,Industry, JobTitle, std::stoi(YearlyPay), std::stoi(WeeklyHours),std::stod(HourlyWage),
+        std::stod(YearsExperience), std::stod(YearsAtCompany), tolower(unemployedStatus[0]), std::stoi(reportedRent),
+        std::stod(expectedTaxContribution),std::stod(UtilitiesCost), std::stoi(GroceryCost) );
+
+        //Add the person to their proper country
+
+        if(map.count(citizen.GetCountry()) > 0){
+            countries.at(map[citizen.GetCountry()]).AddCitizen(citizen);
+        }
+        else{
+            map[citizen.GetCountry()] = countries.size();
+            Country country(citizen.GetCountry());
+            countries.push_back(country);
+            countries.at(countries.size()-1).AddCitizen(citizen);
+        }
     }
 }
 
@@ -129,7 +191,8 @@ int main(){
 
     //Import the data
     std::vector<Country> countries;
-    importData(countries);
+    std::unordered_map<std::string, int> countryIndex;
+    importData(countries, countryIndex);
 
     //While user has yet to exit the program
     while(true){

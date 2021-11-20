@@ -34,6 +34,7 @@ void Country::AddCitizen(Person citizen){
     //If the country is the U.S add the citizen to their respective state
     //Else add the citizen to the country itself
     if(isUS){
+        citizens.push_back(citizen);
         //Find the state index
         if(stateIndex.count(citizen.GetState()) > 0){
             states.at(stateIndex[citizen.GetState()]).AddCitizen(citizen);
